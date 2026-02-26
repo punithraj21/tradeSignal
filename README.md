@@ -1,4 +1,4 @@
-# Tijaara
+# Trade Signal
 
 AI-powered trade intelligence and portfolio dashboard for the Indian stock market (NSE/BSE). Autonomous RSS scraping, AI signal analysis, holdings tracking with profit/loss alerts, and Discord notifications.
 
@@ -27,14 +27,12 @@ AI-powered trade intelligence and portfolio dashboard for the Indian stock marke
 2. **Environment**
 
    Copy `.env.local.example` to `.env.local` and set:
-
    - **Firebase (client):** `NEXT_PUBLIC_FIREBASE_*` for client auth
    - **Firebase (server):** `FIREBASE_SERVICE_ACCOUNT_KEY` (full service account JSON as single-line string)
    - **AI:** `AI_PROVIDER` (`pollinations` or `openrouter`), and either `POLLINATIONS_API_KEY` or `OPENROUTER_API_KEY`
    - **WebSocket:** `NEXT_PUBLIC_WS_URL` (e.g. `ws://localhost:3001`)
 
 3. **Run**
-
    - Next.js (dashboard + API):
 
      ```bash
@@ -51,12 +49,12 @@ AI-powered trade intelligence and portfolio dashboard for the Indian stock marke
 
 ## Scripts
 
-| Script      | Description                          |
-|------------|--------------------------------------|
-| `npm run dev`   | Next.js dev server (Turbopack)      |
-| `npm run dev:ws`| Bun WebSocket server (hot reload)   |
-| `npm run build` | Next.js production build           |
-| `npm run start` | Next.js production server          |
+| Script           | Description                       |
+| ---------------- | --------------------------------- |
+| `npm run dev`    | Next.js dev server (Turbopack)    |
+| `npm run dev:ws` | Bun WebSocket server (hot reload) |
+| `npm run build`  | Next.js production build          |
+| `npm run start`  | Next.js production server         |
 
 ## Main features
 
@@ -104,4 +102,6 @@ See `src/types/config.types.ts` and `CONFIG_SEED` for all keys.
 ## Docs
 
 - [Architecture & logic](docs/ARCHITECTURE.md) — system design, data flow, and main logic.
+
+# tradeSignal
 # tradeSignal
